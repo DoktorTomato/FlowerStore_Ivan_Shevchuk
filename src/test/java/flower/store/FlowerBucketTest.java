@@ -28,6 +28,7 @@ public class FlowerBucketTest {
         Flower flower2 = new Flower();
         flower1.setPrice(price1);
         flower2.setPrice(price2);
+        flower2.setType(FlowerType.ROSE);
         FlowerPack flowerPack1 = new FlowerPack(flower1, quantity1);
         FlowerPack flowerPack2 = new FlowerPack(flower2, quantity2);
         flowerBucket.add(flowerPack1);
