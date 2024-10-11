@@ -21,6 +21,9 @@ public class Flower {
     }
 
     public String getColor(){
+        if (this.color == null) {
+            return null;
+        }
         return color.toString();
     }
 }
