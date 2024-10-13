@@ -17,8 +17,8 @@ public class FlowerStoreTest {
 
     @BeforeEach
     public void init() {
-        int q = 5;
-        int w = 9;        
+        final int q = 5;
+        final int w = 9;        
         theStore = new FlowerStore();
         roseOne = new Flower();
         roseOne.setColor(FlowerColor.RED);
@@ -48,7 +48,7 @@ public class FlowerStoreTest {
 
     @Test
     public void testSearch() {
-        int e = 3;
+        final int e = 3;
         Flower toSearchOne = new Flower();
         toSearchOne.setColor(FlowerColor.RED);
         List<Flower> expectedLstOne = new ArrayList<Flower>();
