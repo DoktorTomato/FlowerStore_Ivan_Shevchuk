@@ -9,7 +9,7 @@ public enum FlowerColor {
         this.rgb = rgbcode;
     }
 
-    public String toString(){
+    public String toString() {
         return rgb.toString();
     }
 }

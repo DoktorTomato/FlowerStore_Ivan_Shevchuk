@@ -20,19 +20,19 @@ public class FlowerBucketTest {
 
     @Test
     public void testPrice() {
-        int price1 = RANDOM_GENERATOR.nextInt(MAX_PRICE);
-        int quantity1 = RANDOM_GENERATOR.nextInt(MAX_QUANTITY);
-        int price2 = RANDOM_GENERATOR.nextInt(MAX_PRICE);
-        int quantity2 = RANDOM_GENERATOR.nextInt(MAX_QUANTITY);
-        Flower flower1 = new Flower();
-        Flower flower2 = new Flower();
-        flower1.setPrice(price1);
-        flower2.setPrice(price2);
-        flower2.setType(FlowerType.ROSE);
-        FlowerPack flowerPack1 = new FlowerPack(flower1, quantity1);
-        FlowerPack flowerPack2 = new FlowerPack(flower2, quantity2);
+        int priceOne = RANDOM_GENERATOR.nextInt(MAX_PRICE);
+        int quantityOne = RANDOM_GENERATOR.nextInt(MAX_QUANTITY);
+        int priceTwo = RANDOM_GENERATOR.nextInt(MAX_PRICE);
+        int quantityTwo = RANDOM_GENERATOR.nextInt(MAX_QUANTITY);
+        Flower flowerOne = new Flower();
+        Flower flowerTwo = new Flower();
+        flowerOne.setPrice(priceOne);
+        flowerTwo.setPrice(priceOne);
+        flowerTwo.setType(FlowerType.ROSE);
+        FlowerPack flowerPack1 = new FlowerPack(flowerOne, quantityOne);
+        FlowerPack flowerPack2 = new FlowerPack(flowerTwo, quantityTwo);
         flowerBucket.add(flowerPack1);
         flowerBucket.add(flowerPack2);
-        Assertions.assertEquals(price1 * quantity1 + price2 * quantity2, flowerBucket.getPrice());
+        Assertions.assertEquals(priceOne * quantityOne + priceTwo * quantityTwo, flowerBucket.getPrice());
     }
 }

@@ -6,17 +6,17 @@ import java.util.List;
 public class FlowerBucket {
     List<FlowerPack> flowerPacks;
 
-    public FlowerBucket(){
+    public FlowerBucket() {
         flowerPacks = new ArrayList<>();
     }
 
-    public void add(FlowerPack flowerPack){
+    public void add(FlowerPack flowerPack) {
         flowerPacks.add(flowerPack);
     }
 
-    public double getPrice(){
+    public double getPrice() {
         double price = 0;
-        for (FlowerPack pack:flowerPacks){
+        for (FlowerPack pack:flowerPacks) {
             price += pack.getPrice();
         }
         return price;

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FlowerStore {
-    List<Flower> inv;
+    private List<Flower> inv;
 
     public FlowerStore() {
         inv = new ArrayList<Flower>();
