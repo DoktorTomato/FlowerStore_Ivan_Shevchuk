@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FlowerBucket {
-    List<FlowerPack> flowerPacks;
+    private List<FlowerPack> flowerPacks;
 
     public FlowerBucket() {
-        flowerPacks = new ArrayList<>();
+        flowerPacks = new ArrayList<FlowerPack>();
     }
 
     public void add(FlowerPack flowerPack) {

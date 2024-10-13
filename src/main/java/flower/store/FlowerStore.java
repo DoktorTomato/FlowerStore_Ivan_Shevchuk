@@ -21,21 +21,21 @@ public class FlowerStore {
                 continue;
             }
 
-            if (searchedFlower.getColor() == null) {
-                ;
-            } else if (f.getColor() != searchedFlower.getColor()) {
-                continue;
-            }
+            if (searchedFlower.getColor() != null) {
+                if (f.getColor() != searchedFlower.getColor()) {
+                    continue;
+                }
+            } 
 
-            if (searchedFlower.getType() == null) {
-                ;
-            } else if (f.getType() != searchedFlower.getType()) {
-                continue;
+            if (searchedFlower.getType() != null) {
+                if (f.getType() != searchedFlower.getType()) {
+                    continue;
+                }
             }
-            if (searchedFlower.getSepalLength() == 0) {
-                ;
-            } else if (f.getSepalLength() != searchedFlower.getPrice()) {
-                continue;
+            if (searchedFlower.getSepalLength() != 0) {
+                if (f.getSepalLength() != searchedFlower.getPrice()) {
+                    continue;
+                }
             }
             perfectFit.add(f);
         }

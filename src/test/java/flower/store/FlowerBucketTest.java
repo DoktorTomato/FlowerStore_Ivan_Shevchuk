@@ -27,12 +27,12 @@ public class FlowerBucketTest {
         Flower flowerOne = new Flower();
         Flower flowerTwo = new Flower();
         flowerOne.setPrice(priceOne);
-        flowerTwo.setPrice(priceOne);
+        flowerTwo.setPrice(priceTwo);
         flowerTwo.setType(FlowerType.ROSE);
-        FlowerPack flowerPack1 = new FlowerPack(flowerOne, quantityOne);
-        FlowerPack flowerPack2 = new FlowerPack(flowerTwo, quantityTwo);
-        flowerBucket.add(flowerPack1);
-        flowerBucket.add(flowerPack2);
-        Assertions.assertEquals(priceOne * quantityOne + priceTwo * quantityTwo, flowerBucket.getPrice());
+        FlowerPack flowerPackOne = new FlowerPack(flowerOne, quantityOne);
+        FlowerPack flowerPackTwo = new FlowerPack(flowerTwo, quantityTwo);
+        flowerBucket.add(flowerPackOne);
+        flowerBucket.add(flowerPackTwo);
+        Assertions.assertEquals(flowerBucket.getPrice(), priceOne * quantityOne + priceTwo * quantityTwo);
     }
 }
