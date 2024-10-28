@@ -22,6 +22,7 @@ public class FlowerBucketTest {
     @BeforeEach
     public void init() {
         flowerBucket = new FlowerBucket();
+        System.out.println("Testing...");
     }
 
     @Test
