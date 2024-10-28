@@ -3,6 +3,11 @@ package flower.store;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import flower.store.flowers.Flower;
+import flower.store.flowers.FlowerColor;
+import flower.store.flowers.FlowerType;
+import flower.store.flowers.FlowerStore;
+
 import java.util.ArrayList;
 import java.util.List;
 

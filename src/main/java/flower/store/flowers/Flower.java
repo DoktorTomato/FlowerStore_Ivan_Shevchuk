@@ -1,4 +1,4 @@
-package flower.store;
+package flower.store.flowers;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,7 +7,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Setter @Getter @ToString @AllArgsConstructor @NoArgsConstructor
-public class Flower {
+public class Flower extends Item{
     private FlowerType type;
     private FlowerColor color;
     private double sepalLength;
